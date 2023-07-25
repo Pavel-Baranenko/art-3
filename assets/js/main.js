@@ -88,7 +88,15 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 		iosMob.classList.toggle('active-mob');
 	})
 }
-
+if ($(document).windth() < 768) {
+	const iosMob = document.querySelector('.hover-ios')
+	iosMob.addEventListener('mouseover', function () {
+		iosMob.classList.toggle('active-mob');
+	})
+	iosMob.addEventListener('mouseout', function () {
+		iosMob.classList.toggle('active-mob');
+	})
+}
 
 
 var timeoutHandler = null;
