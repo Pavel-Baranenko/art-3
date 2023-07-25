@@ -3038,6 +3038,8 @@ ul {
 .active-mob .bg-blu-avt {
   animation-name: bg-blu-avt;
   animation-duration: 0.9s;
+  /* fill: red; */
+
 }
 
 @keyframes bg-blu {
@@ -3237,7 +3239,7 @@ ul {
 
 .bg.dis-act {
   animation-name: dis;
-  animation-duration: 0.5s;
+  animation-duration: 0.9s;
   animation-timing-function: ease-in;
   opacity: 0;
 }
