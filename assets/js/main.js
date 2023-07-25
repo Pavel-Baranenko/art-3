@@ -66,6 +66,7 @@ var parallaxInstance = new Parallax(scene);
 
 
 const divEl = document.querySelector('.hover__img');
+
 const icons = document.querySelector('.icons');
 divEl.addEventListener('mouseover', function () {
 	icons.classList.add('active');
@@ -73,15 +74,45 @@ divEl.addEventListener('mouseover', function () {
 divEl.addEventListener('mouseout', function () {
 	icons.classList.remove('active');
 })
-// divEl.addEventListener('click', function () {
-// 	icons.classList.remove('active-mob');
-// 	icons.classList.add('active-mob');
-// })
+
+
+
+
+
+if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+	const iosMob = document.querySelector('.hover-ios')
+	iosMob.addEventListener('mouseover', function () {
+		iosMob.classList.toggle('active-mob');
+	})
+	iosMob.addEventListener('mouseout', function () {
+		iosMob.classList.toggle('active-mob');
+	})
+}
 
 
 
 var timeoutHandler = null;
 $(".hover__img").click(function () {
+	$(".icons").addClass('active-mob');
+	if (timeoutHandler) clearTimeout(timeoutHandler);
+
+	timeoutHandler = setTimeout(function () {
+		$(".icons").removeClass('active-mob');
+
+	}, 800);
+});
+
+// $(".hover-ios").click(function () {
+// 	$(".icons").addClass('active-mob');
+// 	if (timeoutHandler) clearTimeout(timeoutHandler);
+
+// 	timeoutHandler = setTimeout(function () {
+// 		$(".icons").removeClass('active-mob');
+
+// 	}, 800);
+// });
+
+$(".hover-ios").click(function () {
 	$(".icons").addClass('active-mob');
 	if (timeoutHandler) clearTimeout(timeoutHandler);
 
