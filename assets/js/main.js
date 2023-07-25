@@ -88,15 +88,18 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 		iosMob.classList.toggle('active-mob');
 	})
 }
-if ($(document).windth() < 768) {
-	const iosMob = document.querySelector('.hover-ios')
-	iosMob.addEventListener('mouseover', function () {
-		iosMob.classList.toggle('active-mob');
-	})
-	iosMob.addEventListener('mouseout', function () {
-		iosMob.classList.toggle('active-mob');
-	})
-}
+// if ($(document).width() < 768) {
+// 	const iosMob = document.querySelector('.hover-ios')
+// 	const bgBlue = document.querySelector('.bg-blu-fone')
+// 	// console.log(bgBlue);
+// 	iosMob.addEventListener('mouseover', function () {
+// 		iosMob.classList.toggle('active-mob');
+// 	})
+// 	iosMob.addEventListener('mouseout', function () {
+// 		iosMob.classList.toggle('active-mob');
+// 		bgBlue.classList.toggle('dis-act');
+// 	})
+// }
 
 
 var timeoutHandler = null;
@@ -120,12 +123,3 @@ $(".hover__img").click(function () {
 // 	}, 800);
 // });
 
-$(".hover-ios").click(function () {
-	$(".icons").addClass('active-mob');
-	if (timeoutHandler) clearTimeout(timeoutHandler);
-
-	timeoutHandler = setTimeout(function () {
-		$(".icons").removeClass('active-mob');
-
-	}, 800);
-});
