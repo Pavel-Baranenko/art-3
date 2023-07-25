@@ -107,3 +107,28 @@ if (screenWidth < 768) {
 	})
 }
 
+
+
+const trade = document.querySelector(".trade__international-img");
+const tradeBg = document.querySelector(".bg");
+const tradeBg2 = document.querySelector(".bgs");
+
+
+trade.addEventListener('mouseover', () => {
+	tradeBg.classList.remove('dis-act')
+	tradeBg2.classList.add('act')
+})
+trade.addEventListener('mouseout', () => {
+	tradeBg.classList.add('dis-act')
+	tradeBg2.classList.remove('act')
+})
+
+const newI = document.querySelector(".new-img");
+const newBg = document.querySelector(".new-i");
+
+newI.addEventListener('mouseover', () => {
+	newBg.classList.remove('dis-act')
+})
+newI.addEventListener('mouseout', () => {
+	newBg.classList.add('dis-act')
+})
