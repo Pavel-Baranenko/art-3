@@ -110,17 +110,19 @@ if (screenWidth < 768) {
 
 
 const trade = document.querySelector(".trade__international-img");
-const tradeBg = document.querySelector(".bg");
-const tradeBg2 = document.querySelector(".bgs");
-
+// const tradeBg = document.querySelector(".bg");
+// const tradeBg2 = document.querySelector(".bgs");
+const tradebg = document.querySelector(".trade-bg");
 
 trade.addEventListener('mouseover', () => {
-	tradeBg.classList.remove('dis-act')
-	tradeBg2.classList.add('act')
+	// tradeBg.classList.remove('dis-act')
+	// tradeBg2.classList.add('act')
+	tradebg.classList.add('act')
 })
 trade.addEventListener('mouseout', () => {
-	tradeBg.classList.add('dis-act')
-	tradeBg2.classList.remove('act')
+	// tradeBg.classList.add('dis-act')
+	// tradeBg2.classList.remove('act')
+	tradebg.classList.remove('act')
 })
 
 const newI = document.querySelector(".new-img");
