@@ -3346,3 +3346,14 @@ ul {
 #cons {
   /* display: none; */
 }
+
+.an.act {
+  rotate: 2deg;
+  transition: all 0.4s ease-in;
+  /* transform: translateX(10px); */
+}
+
+.an {
+  rotate: -2deg;
+  transition: all 0.4s ease-out;
+}

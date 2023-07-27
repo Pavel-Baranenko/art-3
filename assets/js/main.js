@@ -134,3 +134,13 @@ newI.addEventListener('mouseover', () => {
 newI.addEventListener('mouseout', () => {
 	newBg.classList.add('dis-act')
 })
+
+const cons = document.getElementById("cons");
+const an = document.querySelector(".an");
+
+cons.addEventListener('mouseover', () => {
+	an.classList.add('act')
+})
+cons.addEventListener('mouseout', () => {
+	an.classList.remove('act')
+})
