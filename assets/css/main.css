@@ -3357,3 +3357,75 @@ ul {
   rotate: -2deg;
   transition: all 0.4s ease-out;
 }
+
+@media (max-width:1270px) {
+
+  .anim111,
+  .anim112 {
+    height: 260px;
+  }
+
+  .animation1,
+  .animation2 {
+    width: 130%;
+  }
+
+  .tactic__item-6 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width:1023px) {
+
+  .anim111,
+  .anim112 {
+    height: 140px;
+  }
+
+  .animation1,
+  .animation2 {
+    width: auto;
+    height: 140px;
+  }
+
+  .text-new-6 {
+    width: auto;
+  }
+}
+
+@media (max-width:768px) {
+
+  .anim111,
+  .anim112 {
+    width: 150px;
+    height: 100px;
+    margin-right: 7px;
+  }
+
+  .animation1,
+  .animation2 {
+    width: 150px;
+    height: 100px;
+    margin-left: 7px;
+  }
+
+  .text-new-6 {
+    width: auto;
+  }
+
+  .tactic__item-5 {
+    width: 120px !important;
+  }
+
+  .tactic__item-6 {
+    width: 120px !important;
+    margin-left: 0;
+    /* width: max-content !important; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tactic__item-6 .tactic__item-text {
+    margin-top: 24px !important;
+  }
+}
