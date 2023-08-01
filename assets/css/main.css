@@ -3397,9 +3397,49 @@ ul {
 
   .anim111,
   .anim112 {
+    width: 235px;
+    height: 150px;
+    margin-right: 17px;
+    margin-left: -10px;
+  }
+
+  .animation1,
+  .animation2 {
+    width: 235px;
+    height: 150px;
+    margin-left: 7px;
+  }
+
+  .text-new-6 {
+    width: auto;
+  }
+
+  .tactic__item-5 {
+    width: 157px !important;
+    margin-right: 13px;
+  }
+
+  .tactic__item-6 {
+    width: 157px !important;
+    margin-left: 13px;
+    /* width: max-content !important; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tactic__item-6 .tactic__item-text {
+    margin-top: 24px !important;
+  }
+}
+
+@media (max-width:412px) {
+
+  .anim111,
+  .anim112 {
     width: 150px;
     height: 100px;
     margin-right: 7px;
+    margin-left: 0;
   }
 
   .animation1,
@@ -3414,6 +3454,7 @@ ul {
   }
 
   .tactic__item-5 {
+    margin-right: 0;
     width: 120px !important;
   }
 
