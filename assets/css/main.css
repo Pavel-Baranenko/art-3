@@ -3430,6 +3430,16 @@ ul {
   .tactic__item-6 .tactic__item-text {
     margin-top: 24px !important;
   }
+
+  .tactic__item-6 {
+    text-align: center;
+  }
+
+  .text-new-6 {
+    /* margin: 0 auto; */
+    margin-top: 0;
+    margin-right: 35px;
+  }
 }
 
 @media (max-width:412px) {
@@ -3451,6 +3461,7 @@ ul {
 
   .text-new-6 {
     width: auto;
+    margin-right: 10px;
   }
 
   .tactic__item-5 {
